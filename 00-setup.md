@@ -19,7 +19,7 @@
 
 ### Setting up the Homework Repo (with SSH)
 
-1. Navigate to your preferred folder and clone the repo. Use any folder name for <folder-name>. 
+1. Navigate to your preferred folder and clone the repo. Use any folder name for <folder-name>.
 
 ```console
 $ git clone git@github.com:caterinasworld/webdev-homework.git <folder-name>
@@ -54,10 +54,10 @@ homework    git@github.com:caterinasworld/webdev-homework.git (push)
 
    Important: Do not create a README file. There’s already one in the repository you have cloned.
 
-4. Add your TA as a collaborator.
+4. Add your TA and/or grader as a collaborator.
 
    Go to ‘Settings’ → ‘Manage Access’ → click the “Invite a collaborator’ button. Search for your TA’s username.
-   Check Canvas for your TA's username on GitHub.
+   Check Canvas for your TA or grader's username on GitHub.
 
 5. Add the private GitHub repository you created as a remote.
 
