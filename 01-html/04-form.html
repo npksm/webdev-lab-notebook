@@ -10,34 +10,63 @@
     <main>
       <form action="/submit">
         <h1>Form</h1>
-
         <div class="input-div">
           <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            required
+          />
         </div>
         <div class="input-div">
           <label for="email">Email: </label>
-          <input type="email" name="email" id="email" required/>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="name@pdx.edu"
+            required
+          />
         </div>
-        <br>
+        <br />
         <fieldset>
           <legend>Favorite Character:</legend>
-          <label><input type="radio" name="spongebob" value="spongebob"/>Spongebob</label><br>
-          <label><input type="radio" name="sandy" value="sandy"/>Sandy</label><br>
-          <label><input type="radio" name="patrick" value="patrick"/>Patrick</label>
+          <div>
+            <input
+              type="radio"
+              id="spongebob"
+              name="character"
+              value="spongebob"
+            /><label for="spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" name="sandy" value="sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" name="patrick" value="patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
         </fieldset>
-        <br>
+        <br />
         <fieldset>
           <legend>Are you a fan of the show?</legend>
-          <label><input type="checkbox" name="yes" value="yes"/>Yes, I have watched all episodes!</label><br>
-          <label><input type="checkbox" name="yes" value="yes"/>Yes, it's got the best memes.</label>
+          <div>
+            <input type="checkbox" id="option1" name="episodes" value="yes" />
+            <label for="option1">Yes, I have watched all episodes!</label>
+          </div>
+          <div>
+            <input type="checkbox" id="option2" name="episodes" value="yes" />
+            <label for="option2">Yes, it's got the best memes.</label>
+          </div>
         </fieldset>
-        <br>
+        <br />
         <div class="button">
-            <input type="submit" value="Submit"/>
-            <input type="reset" value="Reset"/>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
         </div>
- 
       </form>
     </main>
   </body>
