@@ -13,18 +13,23 @@
 /*li[class] {
   color: var(--red);
 }*/
+/* Space ~=  any li with a class whose value includes but is not limited to dog
+*/
 li[class~="dog"] {
   color: var(--magenta);
 }
-
+/* Prefix ^= any li element with an id attribute whose value begins with c 
+*/
 li[id^="c"] {
   color: var(--teal);
 }
-
+/* Substring *= any li element with a class attribute whose value contains do
+*/
 li[class*="do"] {
   color: var(--royalblue);
 }
-
+/*Suffix $= any li element with a class attribute whose value ends in g
+*/
 li[class$="g"] {
   color: var(--violet);
 }
@@ -33,4 +38,16 @@ li[class$="g"] {
 
 section li {
   color: var(--green);
+}
+
+/*.list-food ol > .second {
+  color: var(--violet);
+}*/
+
+.first ~ li {
+  color: var(--magenta);
+}
+
+.second + li {
+  color: var(--royalblue);
 }
