@@ -8,8 +8,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.flex-container-1 flex-item {
-}
 /* Flex Container 2 */
 .flex-container-2 {
   display: flex;

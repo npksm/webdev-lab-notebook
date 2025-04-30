@@ -5,6 +5,15 @@
 .article {
   grid-area: article;
 }
+.aside {
+  grid-area: aside;
+}
+.section {
+  grid-area: section;
+}
+.footer {
+  grid-area: footer;
+}
 
 .grid-container {
   display: grid;
@@ -13,12 +22,49 @@
   grid-template-rows: repeat(8, 1fr);
   gap: 10px;
   grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    "header"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+}
+/*@media (max-width: 414px) {
+}*/
+@media (min-width: 415px) and (max-width: 1023px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "article aside"
+      "article aside"
+      "article aside"
+      "article aside"
+      "section section"
+      "section section"
+      "footer footer";
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "header header"
+      "aside article"
+      "aside article"
+      "aside article"
+      "aside article"
+      "section section"
+      "section section"
+      "footer footer";
+  }
 }
