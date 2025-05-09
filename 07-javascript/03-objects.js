@@ -2,7 +2,7 @@ let result = {};
 
 const insertItem = (key, value) => {
   // insertItem the property with key and value into result
-  return key;
+  result[key] = value;
 };
 
 const deleteItem = (key) => {
@@ -17,18 +17,20 @@ const lookupItem = (key) => {
 
 const printItems = () => {
   // return a string of the concatenated key in result, separated by commas
+  console.log(Object.values(result));
+  return Object.keys(result).join(", ");
 };
 
-insertItem('hello', 'world');
-insertItem('lorem', 'ipsum');
-insertItem('sit', 'amet');
+insertItem("hello", "world");
+insertItem("lorem", "ipsum");
+insertItem("sit", "amet");
 console.log(printItems());
 // expected: 'hello, lorem, sit' (order may be different)
-console.log(lookupItem('lorem'));
+console.log(lookupItem("lorem"));
 // expected: 'ipsum'
 
-deleteItem('lorem');
+deleteItem("lorem");
 console.log(printItems());
 // expected: 'hello, sit' (order may be different)
-console.log(lookupItem('lorem'));
+console.log(lookupItem("lorem"));
 // expected: 'Item does not exist'
